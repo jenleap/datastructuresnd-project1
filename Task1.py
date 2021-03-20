@@ -30,5 +30,5 @@ def count_phone_numbers(records):
 
 texts.extend(calls)
 unique_phone_nums = count_phone_numbers(texts)
-print("There are {} different telephone numbers in the records.".format(unique_phone_nums))
+print(f"There are {unique_phone_nums} different telephone numbers in the records.")
 

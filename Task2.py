@@ -34,7 +34,7 @@ def calculate_longest_call(call_list):
 
     for key, value in call_dict.items():
         if value == longest_call:
-            print("{} spent the longest time, {} seconds, on the phone during September 2016.".format(key, value))
+            print(f"{key} spent the longest time, {value} seconds, on the phone during September 2016.")
 
 calculate_longest_call(calls)
 
