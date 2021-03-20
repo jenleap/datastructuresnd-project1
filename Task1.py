@@ -18,3 +18,17 @@ How many different telephone numbers are there in the records?
 Print a message:
 "There are <count> different telephone numbers in the records."
 """
+
+def count_phone_numbers(records):
+    number_count = set()
+
+    for line in records:
+        number_count.add(line[0])
+        number_count.add(line[1])
+
+    return len(number_count)
+
+texts.extend(calls)
+unique_phone_nums = count_phone_numbers(texts)
+print("There are {} different telephone numbers in the records.".format(unique_phone_nums))
+

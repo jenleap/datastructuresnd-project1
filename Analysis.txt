@@ -1,0 +1,12 @@
+Task 0:
+O(0n + 4)
+O(1)
+
+Task 1:
+O(2n + 2)
+O(n)
+
+Task 2:
+O(1 + 2n + n + n)
+O(4n + 1)
+O(n)
