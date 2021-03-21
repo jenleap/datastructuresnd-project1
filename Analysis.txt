@@ -13,8 +13,12 @@ O(n)
 
 Task 3:
 Part A:
-O(3n + 3)
-O(n)
+O((n log n) + 2n + 3)
+O(n log n)
 Part B:
 O(2n + 3)
 O(n)
+
+Task 4:
+O((n log n) + 4n + 7)
+O(n log n)
