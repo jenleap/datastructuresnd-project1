@@ -10,3 +10,11 @@ Task 2:
 O(1 + 2n + n + n)
 O(4n + 1)
 O(n)
+
+Task 3:
+Part A:
+O(3n + 3)
+O(n)
+Part B:
+O(2n + 3)
+O(n)
