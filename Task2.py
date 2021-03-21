@@ -24,11 +24,12 @@ def calculate_longest_call(call_list):
     call_dict = dict()
 
     for line in call_list:
-        for i in range(2):
-            if call_dict.get(line[i]):
-                call_dict[line[i]] += int(line[3])
-            else:
-                call_dict[line[i]] = int(line[3])
+        if line[2][3:10] == '09-2016':
+            for i in range(2):
+                if call_dict.get(line[i]):
+                    call_dict[line[i]] += int(line[3])
+                else:
+                    call_dict[line[i]] = int(line[3])
         
     longest_call = max(call_dict.values())
 
