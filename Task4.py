@@ -26,19 +26,19 @@ The list of numbers should be print out one per line in lexicographic order with
 """
 
 def check_telemarketer(call_list, text_list):
-    call_senders = list()
-    call_receivers = list()
-    text_senders = list()
-    text_receivers = list()
+    call_senders = set()
+    call_receivers = set()
+    text_senders = set()
+    text_receivers = set()
     possible_telemarketers = set()
 
     for line in call_list:
-        call_senders.append(line[0])
-        call_receivers.append(line[1])
+        call_senders.add(line[0])
+        call_receivers.add(line[1])
 
     for tline in text_list:
-        text_senders.append(tline[0])
-        text_receivers.append(tline[1])
+        text_senders.add(tline[0])
+        text_receivers.add(tline[1])
 
     for sender in call_senders:
         if sender not in call_receivers and sender not in text_senders and sender not in text_receivers:

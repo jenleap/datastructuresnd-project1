@@ -61,7 +61,7 @@ def get_area_code(number):
   elif number.startswith('('):
     return number.split(')')[0] + ')'
   else: 
-    return number.split(' ')[0]
+    return number.split(' ')[0][:4]
 
 def calculate_percent_local_calls(call_list):
   total_calls = 0

@@ -1,24 +1,40 @@
 Task 0:
-O(0n + 2)
-O(1)
+Two print statements will run, no matter the size of the input, so we have O(1).
 
 Task 1:
-O(2n + 2)
-O(n)
+We extend the text list with the call list (O(1)).
+We then pass the newly created list to our count_phone_numbers() function. This runs a for-loop
+for each line of the list, to add numbers to a set, which it returns. The for-loop is O(n), so 
+worst-case that is what we have overall.
 
 Task 2:
-O(1 + 2n + n + n)
-O(4n + 1)
-O(n)
+We create new dict. 
+We then run a for-loop, for each line in the call list. This is O(n).
+If the line has the correct date, we run two additional lines to add numbers to the dict. (O(2n))
+We then call max() to get the longest call. This is O(n).
+We then loop through the call dict to get the number for the longest call. Worst case, this is O(n).
+Overall, we have O(n).
 
 Task 3:
 Part A:
-O((n log n) + 2n + 3)
-O(n log n)
+We create a new set to capture area codes.
+We then run a for-loop for each line in the call list and get the area code. O(n)
+We cast the set into a list.
+We sort the list. O(n log n)
+Overall, worst case, we have O(n log n)
+
 Part B:
-O(2n + 3)
-O(n)
+We initialize two variables to hold our call counts.
+We run a for-loop for each line in the call list. At max, we run two more lines to add to our counts. O(2n)
+We then use the counts to calculate a percentage.
+Worst case, we have O(n).
 
 Task 4:
-O((n log n) + 4n + 7)
-O(n log n)
+We first run 5 lines that initialize our variables.
+We have a for-loop that loops through the call list and appends callers and senders. O(2n)
+We do the same for the text list. O(2n)
+We then have a for-loop that goes through the list of call senders (O(n)) and checks if it senders is included
+in the other lists. The if-not-if-in statement is linear for sets (O(1)). So, we have O(n) for this block of code.
+We then cast the set of telemarketers to a list.
+We sort the list. O(n log n)
+Overall, we have O(n log n) as worst case because we have sorted the list.
